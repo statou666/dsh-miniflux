@@ -90,5 +90,5 @@ Express cron (min hour day month weekday), host local time.
 It took a fair number of tokens to build this. If it helped you, a small tip is appreciated.
 
 <p align="center">
-  <img src="assets/support.jpg" alt="支持作者 / support the author" width="260">
+  <img src="assets/support.jpg" alt="收款码 / payment QR code" width="260">
 </p>
