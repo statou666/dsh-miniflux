@@ -22,6 +22,20 @@ Settings → Plugins → Miniflux. Changes apply live, no restart.
 
 ## 安装 / Install
 
+**从 npm 安装（发布后可用）**
+
+```bash
+dsh plugin --profile <name> add dsh-miniflux
+```
+
+**从 GitHub 安装（当前可用）**
+
+```bash
+git clone https://github.com/niupkk/dsh-miniflux.git
+cd dsh-miniflux && npm install
+dsh plugin --profile <name> add link:$PWD
+```
+
 **从仓库链接安装（开发态）**
 
 ```bash
