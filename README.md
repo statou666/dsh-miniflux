@@ -13,6 +13,27 @@ dsh plugin --profile <name> add link:/path/to/dsh-miniflux
 设置页在「设置 → 插件 → Miniflux」。改完即时生效（`volatile` 字段热应用），不用重启。
 Settings → Plugins → Miniflux. Changes apply live, no restart.
 
+
+## 依赖 / Requirements
+
+- DSH `>=0.2.0-rc.2`
+- 系统有 `ffmpeg`（EPUB 内嵌图片时把 WebP/AVIF 转 JPEG；没有也能跑，只是这类图会被跳过）
+- 抓外网图片需要代理时，在设置里填 `imageProxy`（例如 `http://user:pass@host:port`）
+
+## 安装 / Install
+
+**从仓库链接安装（开发态）**
+
+```bash
+git clone <repo> dsh-miniflux
+cd dsh-miniflux && npm install          # 装上 @deepseek-ai/schemastery
+dsh plugin --profile <name> add link:$PWD
+```
+
+`link:` 安装不会自动装依赖，所以要先 `npm install` 一次；如果改用 npm 上发布的包，`dsh plugin add dsh-miniflux` 会自己装。
+
+装完重启一次 dsh web，左侧栏就会出现 **Miniflux** 图标。
+
 ## 设置项 / Settings
 
 | 字段 Field | 说明 Description |

@@ -46,5 +46,8 @@
         "@deepseek-ai/dsh-client-ui-layout"
       ]
     }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.5"
   }
 }
