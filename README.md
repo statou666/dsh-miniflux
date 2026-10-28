@@ -80,3 +80,15 @@ Express cron (min hour day month weekday), host local time.
 
 `GET /api/dsh-miniflux/status` — 连通性与生效配置
 `POST /api/dsh-miniflux/generate?what=digest|feed-epub&kind=morning|evening` — 立刻生成
+
+---
+
+## 如果这个插件帮到你 / If this saved you some time
+
+花了不少 token，有帮助的话帮帮忙吧。
+
+It took a fair number of tokens to build this. If it helped you, a small tip is appreciated.
+
+<p align="center">
+  <img src="assets/support.jpg" alt="支持作者 / support the author" width="260">
+</p>
