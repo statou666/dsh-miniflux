@@ -12,14 +12,18 @@
   "files": [
     "lib/**/*.js",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "assets/**/*"
   ],
   "keywords": [
     "dsh",
     "dsh-plugin",
+    "dsh-market",
     "miniflux",
     "rss",
-    "epub"
+    "epub",
+    "ai",
+    "digest"
   ],
   "license": "MIT",
   "peerDependencies": {
@@ -49,5 +53,14 @@
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niupkk/dsh-miniflux.git"
+  },
+  "homepage": "https://github.com/niupkk/dsh-miniflux#readme",
+  "bugs": {
+    "url": "https://github.com/niupkk/dsh-miniflux/issues"
+  },
+  "author": "niupkk"
 }
