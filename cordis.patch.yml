@@ -1,0 +1,5 @@
+# dsh-miniflux bundle patch: 在 web profile 的插件名单里插入本插件。
+# 用 `dsh plugin --profile <name> add link:<仓库目录>` 激活。
+- insert:
+    - id: miniflux
+      name: dsh-miniflux

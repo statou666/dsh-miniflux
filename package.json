@@ -1,0 +1,50 @@
+{
+  "name": "dsh-miniflux",
+  "version": "0.8.0",
+  "description": "Miniflux for the dsh web GUI: AI-written morning/evening digests, per-feed daily EPUB picks, agent tools (miniflux_feeds / miniflux_search / miniflux_read / miniflux_digest / miniflux_epub / miniflux_star). Configured from the plugin settings page.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "miniflux",
+    "rss",
+    "epub"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.0-rc.2"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "title": {
+      "en": "Miniflux",
+      "zh": "Miniflux 阅读器"
+    },
+    "description": {
+      "en": "AI digests, picks and per-feed EPUBs from Miniflux",
+      "zh": "AI 早晚报、精选与自选源 EPUB"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}
